@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: England
+    columns:
+      - name: Country
+        data_tests:
+          - not_null
+  - name: Scotland
+    columns:
+      - name: Country
+        data_tests:
+          - not_null
+  - name: Wales
+    columns:
+      - name: Country
+        data_tests:
+          - not_null
+  - name: STG_Great_Britain_OpenNames
+    columns:
+      - name: Country
+        data_tests:
+          - not_null
+      # - name: status
+      #   data_tests:
+      #     - accepted_values:
+      #         arguments: # available in v1.10.5 and higher. Older versions can set the <argument_name> as the top-level property.
+      #           values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+      # - name: customer_id
+      #   data_tests:
+      #     - not_null
+      #     - relationships:
+      #         arguments:
+      #           to: ref('stg_customers')
+      #           field: customer_id
