@@ -13,5 +13,6 @@ populated_place as Populated_Place,
 DISTRICT_BOROUGH as "DISTRICT/TOWN", 
 COUNTY_UNITARY as County, 
 Region, 
-Country
+Country,
+Geography as Geography
 From PRS_OPEN_NAMES_SCH.PRS_NAMED_PLACE_TBL 
